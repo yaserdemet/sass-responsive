@@ -1,0 +1,35 @@
+//**********************************************************************
+// NAV
+//**********************************************************************
+
+// Grandparent class nav;
+
+.nav {
+    padding: 1rem;
+    height: 10vh;
+
+    &__list {                               // & ampersand kullanımı bir üst parent classı temsil eder.
+        text-align: right;
+    }
+
+    &__item {
+        display: inline;
+        padding: 1rem;
+    }
+    &__link {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        @include transition(1s);
+        
+
+        &:hover {
+            color: lightblue
+        }
+
+       &--active {
+           color: $secondary-color;
+       }
+
+    }
+}
